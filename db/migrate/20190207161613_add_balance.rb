@@ -1,5 +1,5 @@
 class AddBalance < ActiveRecord::Migration
   def change
-    add_column :users, :balance, :float
+    add_column :users, :balance, :integer, :default => 0
   end
 end
